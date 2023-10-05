@@ -55,7 +55,7 @@ a {
   border: 1px solid rgba(255, 91, 46, 0.42);
 }
 
-.btn:hover {
+.btn:not(.top-nav__btn):hover {
   background: #ff5b2e;
   color: #fff;
 }
@@ -514,6 +514,7 @@ a {
   display: flex;
   align-items: center;
   border-bottom: 2px solid #ffe7d8;
+  cursor: pointer;
 }
 
 .feature__item:hover::before {
@@ -816,7 +817,7 @@ a {
 .pricing-grid {
   margin-top: 56px;
   display: grid;
-  grid-template-columns: repeat(3, 302px);
+  grid-template-columns: repeat(3, 300px);
   column-gap: 44px;
 }
 
@@ -877,5 +878,231 @@ a {
   border-right: none;
   rotate: -45deg;
 }
+
+/* =========== Reviews =========== */
+.reviews {
+  padding: 130px 0 65px;
+}
+
+.reviews-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 300px 600px;
+  column-gap: 115px;
+}
+
+.reviews__media-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 274px;
+  height: 350px;
+  border-radius: 999px;
+  background: #ffda54;
+}
+
+.reviews__image {
+  max-width: 100%;
+  border-radius: 999px;
+}
+
+.reviews__desc {
+  width: 554px;
+  font-size: 1.8rem;
+}
+
+.reviews__name {
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+  color: #282828;
+  font-family: Sora;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.reviews__name::before {
+  display: inline-block;
+  margin-right: 8px;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #000;
+}
+
+.reviews__arrow-position {
+  position: absolute;
+  top: 50%;
+}
+
+.reviews__arrow-position--left {
+  left: 0;
+}
+
+.reviews__arrow-position--right {
+  right: 0;
+}
+
+.reviews__arrow {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 54px;
+  height: 54px;
+  border: 1px solid #ffd1c4;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.reviews__arrow:hover {
+  background: #ff5b2e;
+}
+
+.reviews__arrow:hover::before {
+  border-color: #fff;
+}
+
+.reviews__arrow:hover::after {
+  background: #fff;
+}
+.reviews__arrow--right {
+  rotate: 180deg;
+}
+
+.reviews__arrow:before {
+  position: absolute;
+  left: 18px;
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #ff5b2e;
+  border-top: none;
+  border-right: none;
+  rotate: 45deg;
+}
+
+.reviews__arrow:after {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 2px;
+  background-color: #ff5b2e;
+  border-radius: 999px;
+}
+
+.reviews__row {
+  margin-top: 64px;
+  justify-content: center;
+  column-gap: 12px;
+}
+
+.reviews__row::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 8px;
+  border-radius: 999px;
+  background: #ff5b2e;
+}
+
+.reviews__icon {
+  width: 8px;
+  height: 8px;
+  border: 1px solid #ff5b2e;
+  border-radius: 50%;
+}
+
+/* =========== Blog =========== */
+.blog {
+  padding: 65px 0 130px;
+}
+
+.blog__desc {
+  width: 350px;
+}
+
+.blog__btn {
+  margin-top: 24px;
+  display: inline-block;
+
+  width: 182px;
+}
+
+.blog-grid {
+  margin-top: 54px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 48px;
+}
+
+.blog__item {
+  width: 358px;
+}
+
+.blog__media-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+  position: relative;
+  width: 100%;
+  height: 362px;
+  flex-shrink: 0;
+  border-radius: 24px;
+}
+
+.blog__media-wrap--01 {
+  background: #90ccff;
+}
+
+.blog__media-wrap--02 {
+  background: #ff997e;
+}
+
+.blog__media-wrap--03 {
+  background: #5bd6e2;
+}
+
+.blog__date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 24px 0 0 36px;
+  color: #fff;
+  font-size: 14px;
+  /* font-weight: 400; */
+  line-height: 121.429%;
+}
+
+.blog__image {
+  width: 80%;
+}
+
+.blog-item__title {
+  margin-top: 28px;
+  color: #000958;
+  font-size: 2.2rem;
+  line-height: 154.545%;
+}
+
+.blog-item__desc {
+  margin-top: 16px;
+  color: #656689;
+  font-size: 1.4rem;
+  /* font-weight: 400; */
+  line-height: 171.429%;
+}
+
+/* =========== Header =========== */
 
 /* =========== Header =========== */
