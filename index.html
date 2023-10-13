@@ -90,7 +90,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Sora:wght@600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Sora:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -238,7 +238,7 @@
               </div>
               <div class="about__exp">
                 <div class="about__exp-wrap">
-                  <span class="about__exp-number">20+</span>
+                  <b class="about__exp-number">20+</b>
                   <span class="about__exp-label">Years Experience</span>
                 </div>
                 <img
@@ -301,7 +301,7 @@
                 large play yard.
               </p>
               <div class="row feature__row">
-                <div class="feature__item">
+                <div class="feature__item feature__item--active">
                   <img
                     src="./assets/img/feature-icon1.svg"
                     alt=""
@@ -326,11 +326,27 @@
                   <span class="feature__name">Pet Transport</span>
                 </div>
               </div>
-              <p class="section-desc feature_item-desc">
-                While you're on holiday, here's where your furry friends will
-                spend their time.
-              </p>
-              <a href="#!" class="feature__link">View more</a>
+              <div class="feature__item-info feature__item-info--active">
+                <p class="section-desc feature__item-desc">
+                  While you're on holiday, here's where your furry friends will
+                  spend their time 1.
+                </p>
+                <a href="#!" class="feature__link">View more</a>
+              </div>
+              <div class="feature__item-info">
+                <p class="section-desc feature__item-desc">
+                  While you're on holiday, here's where your furry friends will
+                  spend their time 2.
+                </p>
+                <a href="#!" class="feature__link">View more</a>
+              </div>
+              <div class="feature__item-info">
+                <p class="section-desc feature__item-desc">
+                  While you're on holiday, here's where your furry friends will
+                  spend their time 3.
+                </p>
+                <a href="#!" class="feature__link">View more</a>
+              </div>
             </div>
           </div>
         </div>
@@ -459,8 +475,8 @@
                   class="member__decor"
                 />
               </div>
-              <span class="member__position">Pet Trainer</span>
-              <span class="member__name">Meghan Samit</span>
+              <p class="member__position">Pet Trainer</p>
+              <h3 class="member__name">Meghan Samit</h3>
             </article>
             <article class="team__member">
               <div class="team__wrap team__wrap--02">
@@ -475,8 +491,8 @@
                   class="member__decor member__decor--top"
                 />
               </div>
-              <span class="member__position">Veterinarian</span>
-              <span class="member__name">Alissa Silva</span>
+              <p class="member__position">Veterinarian</p>
+              <h3 class="member__name">Alissa Silva</h3>
             </article>
             <article class="team__member">
               <div class="team__wrap team__wrap--03">
@@ -491,8 +507,8 @@
                   class="member__decor"
                 />
               </div>
-              <span class="member__position">Veterinarian</span>
-              <span class="member__name">Cindy Harris</span>
+              <p class="member__position">Veterinarian</p>
+              <h3 class="member__name">Cindy Harris</h3>
             </article>
             <article class="team__member">
               <div class="team__wrap team__wrap--04">
@@ -507,8 +523,8 @@
                   class="member__decor member__decor--top"
                 />
               </div>
-              <span class="member__position">Animal Caretaker</span>
-              <span class="member__name">Lucas Tony</span>
+              <p class="member__position">Animal Caretaker</p>
+              <h3 class="member__name">Lucas Tony</h3>
             </article>
           </div>
           <a href="" class="btn team__btn">View All Team</a>
@@ -597,14 +613,38 @@
               </figure>
               <section class="reviews__content">
                 <h2 class="section-title">Our Reviews</h2>
-                <p class="section-desc reviews__desc">
-                  “It was very comforting to recieve a text and pics each day
-                  about our pets and how they were doing. It was also nice that
-                  my pets were in the comfortable environment of their own home
-                  and received playfull attention from our pet sitters as well.
-                  Thanks so much!”
-                </p>
-                <span class="reviews__name">Karla Deras</span>
+                <div class="review__container">
+                  <div class="review">
+                    <blockquote class="section-desc reviews__desc">
+                      “It was very comforting to recieve a text and pics each
+                      day about our pets and how they were doing. It was also
+                      nice that my pets were in the comfortable environment of
+                      their own home and received playfull attention from our
+                      pet sitters as well. Thanks so much!”
+                    </blockquote>
+                    <span class="reviews__name">Karla Deras</span>
+                  </div>
+                  <div class="review">
+                    <blockquote class="section-desc reviews__desc">
+                      “It was very comforting to recieve a text and pics each
+                      day about our pets and how they were doing. It was also
+                      nice that my pets were in the comfortable environment of
+                      their own home and received playfull attention from our
+                      pet sitters as well. Thanks so much!”
+                    </blockquote>
+                    <span class="reviews__name">Karla Deras</span>
+                  </div>
+                  <div class="review">
+                    <blockquote class="section-desc reviews__desc">
+                      “It was very comforting to recieve a text and pics each
+                      day about our pets and how they were doing. It was also
+                      nice that my pets were in the comfortable environment of
+                      their own home and received playfull attention from our
+                      pet sitters as well. Thanks so much!”
+                    </blockquote>
+                    <span class="reviews__name">Karla Deras</span>
+                  </div>
+                </div>
               </section>
               <div
                 class="reviews__arrow-position reviews__arrow-position--left"
@@ -619,6 +659,7 @@
             </div>
           </div>
           <div class="row reviews__row">
+            <div class="reviews__icon reviews__icon--active"></div>
             <div class="reviews__icon"></div>
             <div class="reviews__icon"></div>
             <div class="reviews__icon"></div>
@@ -637,7 +678,7 @@
               <a href="#!">
                 <figure class="blog__media">
                   <div class="blog__media-wrap blog__media-wrap--01">
-                    <span class="blog__date">21 june 2021</span>
+                    <time class="blog__date">21 june 2021</time>
                     <img
                       src="./assets/img/blog1.png"
                       alt=""
@@ -660,7 +701,7 @@
               <a href="#!">
                 <figure class="blog__media">
                   <div class="blog__media-wrap blog__media-wrap--02">
-                    <span class="blog__date">28 june 2021</span>
+                    <time class="blog__date">28 june 2021</time>
                     <img
                       src="./assets/img/blog2.png"
                       alt=""
@@ -683,7 +724,7 @@
               <a href="#!">
                 <figure class="blog__media">
                   <div class="blog__media-wrap blog__media-wrap--03">
-                    <span class="blog__date">10 july 2021</span>
+                    <time class="blog__date">10 july 2021</time>
                     <img
                       src="./assets/img/blog3.png"
                       alt=""
@@ -722,7 +763,7 @@
                 id="email"
                 placeholder="Enter your email"
               />
-              <label for="email" class="footer__btn"></label>
+              <button class="footer__btn"></button>
             </form>
             <h3 class="footer__title">Follow Us</h3>
             <a href="#!">
